@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="uz" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PizzaShop - Tez yetkazib berish</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+      }
+      .font-heading {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="text-white bg-gradient-to-r from-[#180a01] via-[#1f0700] to-[#1f0a00]"
+  >
+    <section
+      class="relative min-h-[953px] w-full overflow-hidden"
+      style="width: 1512px; height: 953px; max-width: 1512px; margin: 0 auto"
+    >
+      <header
+        class="relative z-20 flex items-center justify-between px-[130px] pt-8"
+      >
+        <div class="text-4xl font-extrabold tracking-tight font-heading">
+          <img src="./public/svg/pizzashop.svg" alt="" />
+        </div>
+
+        <nav class="items-center hidden gap-10 text-lg font-medium md:flex">
+          <a
+            href="#"
+            class="relative transition text-white/70 hover:text-orange-400 after:absolute after:left-1/2 after:-bottom-3 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-orange-400 after:opacity-0 hover:after:opacity-100 after:transition"
+          >
+            Home
+          </a>
+
+          <a
+            href="#"
+            class="relative transition text-white/70 hover:text-orange-400 after:absolute after:left-1/2 after:-bottom-3 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-orange-400 after:opacity-0 hover:after:opacity-100 after:transition"
+          >
+            Menu
+          </a>
+
+          <a
+            href="#"
+            class="relative transition text-white/70 hover:text-orange-400 after:absolute after:left-1/2 after:-bottom-3 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-orange-400 after:opacity-0 hover:after:opacity-100 after:transition"
+          >
+            Events
+          </a>
+
+          <a
+            href="#"
+            class="relative transition text-white/70 hover:text-orange-400 after:absolute after:left-1/2 after:-bottom-3 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-orange-400 after:opacity-0 hover:after:opacity-100 after:transition"
+          >
+            About us
+          </a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <button
+            class="text-lg font-semibold transition rounded-full w- bg-gradient-to-r from-orange-500 to-orange-600 hover:brightness-110 w-[163px] h-[40px]"
+          >
+            Log in
+          </button>
+          <button class="relative">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full"
+            >
+              <img src="./public/svg/nav-savat.svg" alt="" />
+            </div>
+          </button>
+        </div>
+      </header>
+      <div class="flex mt-[61px]">
+        <div
+          class="relative z-10 flex flex-col items-start justify-center mt-[58px] px-[130px] text-start"
+        >
+          <h1 class="text-[69.17px] font-extrabold leading-[110%] mb-[30px]">
+            The Fastest
+            <span class="inline-block"
+              ><img src="./public/svg/header-vector.svg" alt=""
+            /></span>
+            <br />
+            Pizza ⚡ Delivery
+          </h1>
+
+          <p class="max-w-4xl mb-10 text-[19.56px] font-normal text-[#A3A3A3]">
+            We will deliver juicy pizza for your family in 30 minutes,<br />
+            if the courier is late –
+            <span class="text-[#fff]">pizza is free!</span><br /><br />Cooking
+            process:
+          </p>
+
+          <div
+            class="relative flex flex-col items-center gap-12 mb-16 md:flex-row"
+          >
+            <div>
+              <img
+                src="./public/img/header-pizza.png"
+                alt="Pizza tayyorlanayotgani"
+              />
+              <img
+                src="./public/img/header-play.png"
+                class="absolute right-[80px] bottom-[43px] cursor-pointer"
+                alt="cheese"
+              />
+            </div>
+          </div>
+
+          <div class="flex">
+            <div
+              class="relative w-[388px] h-[62px] rounded-full border border-orange-400 flex items-center"
+            >
+              <div
+                id="slider"
+                class="absolute top-1 left-1 w-[188px] h-[54px] rounded-full bg-gradient-to-r from-orange-400 to-orange-500 transition-all duration-300 ease-in-out"
+              ></div>
+
+              <button
+                onclick="setActive(0)"
+                id="btn-order"
+                class="relative z-10 w-1/2 h-full font-medium text-white transition"
+              >
+                To order
+              </button>
+
+              <button
+                onclick="setActive(1)"
+                id="btn-menu"
+                class="relative z-10 w-1/2 h-full font-medium text-orange-400 transition"
+              >
+                Pizza-Menu
+              </button>
+            </div>
+            <div class="pt-[15px] pl-[50px]">
+              <img src="./public/svg/header-vector2.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="w-[456px] h-[684px] relative">
+          <img src="./public/img/header-img.png" alt="" />
+          <img
+            src="./public/img/header-fri.png"
+            alt=""
+            class="absolute bottom-[-130px] left-[-130px]"
+          />
+          <img
+            src="./public/img/header-pizza1.png"
+            alt=""
+            class="absolute top-[-130px] right-[-130px]"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="relative px-10 py-20">
+    <h2 class="m-auto text-center text-[69.17px] font-extrabold">Menu</h2>
+  <div class="mx-auto max-w-7xl mt-[50px]">
+
+    <div id="pizza-grid-1" class="grid grid-cols-1 gap-8 mb-16 sm:grid-cols-2 lg:grid-cols-4">
+    </div>
+
+    <div class="mb-16 overflow-hidden rounded-2xl">
+      <img src="./public/img/most.png" alt="Popular Pizza Banner" class="object-cover w-full h-48 brightness-75" />
+    </div>
+
+    <div id="pizza-grid-2" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    </div>
+
+  </div>
+</section>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
